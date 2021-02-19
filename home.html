@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Description" content="LocSafi est spécialiste de location de voiture au Maroc">
+<link rel="stylesheet" href="Style.css">
+<title>Home</title>
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container2 {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+.icon-footer{
+  width: 18px;
+  margin-bottom: 3px;
+}
+</style>
+<body>
+  <nav>
+    <input id="nav-toggle" type="checkbox">
+    <div class="logo"><img src="logo.png" style="width: 120px;height: 90px;padding-top: 3px;" alt="logo"></div>
+    <ul class="links">
+        <li><a href="home.html" style="color: black;">Home</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Reservation.html">Reservation</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+    </ul>
+    <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </label>
+</nav>
+<div class="containerr">
+  <div class="blank"></div>
+<div class="blank"></div>
+<center><h1>Louer Une Voiture Au Maroc</h1></center>
+<div class="blank"></div>
+<p><span style="color: blue;">LocSafi</span>  est spécialiste de location de voiture au Maroc. Pour répondre à vos besoins en termes de mobilité, <span style="color: blue;">LocSafi</span> Cars vous propose au Maroc différentes gammes de véhicules à louer: voiture de location pour votre Voyage occasionnel ou régulier, utilitaire de vacances pour les véhicules de prestige fret de location de véhicules pour les grands événements.
+  <span style="color: blue;">LocSafi</span> propose tout type de location de véhicule, de petite à grande taille, pour ne pas mentionner des gammes spécifiques. La location de voitures est notre métier depuis plus de 10 ans à Safi ; nous proposons des voitures de différentes catégories, des voitures économiques, routières, dites Confort, Prestige, ... La location de voitures en courte, moyenne et longue durée est notre mission. Vous souhaitez une acquisition ? Les voitures sont notre passion ; n'hésitez pas à nous consulter pour un complément d'information sur nos différents produits.</p>
+<h2 style="text-align:center">Slideshow Gallery</h2>
+<div class="container2">
+  <div class="mySlides">
+    <img src="img/A.webp" style="width:100%"  alt="car">
+  </div>
+  <div class="mySlides">
+    <img src="img/b.webp" style="width:100%" alt="car">
+  </div>
+
+  <div class="mySlides">
+    <img src="img/C.webp" style="width:100%" alt="car">
+  </div>
+    
+  <div class="mySlides">
+    <img src="img/D.jpg" style="width:100%" alt="car">
+  </div>
+
+  <div class="mySlides">
+    <img src="img/E.jpg" style="width:100%" alt="car">
+  </div>
+    
+  <div class="mySlides">
+    <img src="img/F.jpg" style="width:100%;" alt="car">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/A.webp" style="width:100%" onclick="currentSlide(1)" alt="car">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/b.webp" style="width:100%" onclick="currentSlide(2)" alt="car" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/C.webp" style="width:100%" onclick="currentSlide(3)" alt="car">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/D.jpg" style="width:100%" onclick="currentSlide(4)" alt="car">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/E.jpg" style="width:100%" onclick="currentSlide(5)" alt="car">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="img/F.jpg" style="width:100%" onclick="currentSlide(6)" alt="car">
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="blank"></div>
+<footer>
+  <div class="main-content">
+   <div class="left box">
+     <h2>About us</h2>
+     <div class="content">
+       <p>Réservez la Voiture Parfaite. Comparez et Économisez avec <span style="color: blue;">LocSafi</span> Trouvez les meilleures offres de voitures pas chères en un instant. App mobile intuitive. Meilleurs prix en ligne. Gain de temps et d'argent. Paiement simple et rapide. Promos exceptionnelles.</p>
+
+     </div>
+   </div>
+   <div class="center box">
+     <h2>Address</h2>
+     <div class="content">
+       <div >
+         <span class="fas"></span>
+         <span class="text">Avenue med benhima, Safi</span>
+       </div>
+       <div class="phone">
+         <span class="fas"></span>
+         <span class="text">+212-639003782</span>
+       </div>
+       <div>
+         <span class="fas"></span>
+         <span class="text">LocSafi@gmail.com</span>
+       </div>
+     </div>
+   </div>
+   <div class="right box">
+    <h2>Follow Us </h2>
+    <div class="content">
+    <div >
+      
+      <span class="text"> <img class="icon-footer" src="icon/facebook.png" alt="facebook">  Facebook/LocSafi</span>
+    </div>
+    <div class="phone">
+      
+      <span class="text"> <img class="icon-footer" src="icon/instagram.png" alt="instagram"> instagram/LocSafi</span>
+    </div>
+    <div>
+      
+      <span class="text"><img class="icon-footer" src="icon/linkedin.png" alt="linkedin"> linkedin/LocSafi</span>
+    </div>
+  </div>
+</div>
+</div>
+
+ <div class="bottom">
+   <center>
+     <span>Created By <a href="#">Med Idbihi</a> | </span>
+     <span></span><span> 2021 All rights reserved.</span>
+   </center>
+ </div>
+</footer>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    
+</body>
+</html>

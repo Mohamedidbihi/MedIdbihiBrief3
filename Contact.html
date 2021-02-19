@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Description" content="LocSafi est spécialiste de location de voiture au Maroc">
+<link rel="stylesheet" href="Style.css">
+<title>Contact</title>
+</head>
+
+<body>
+  <nav>
+    <input id="nav-toggle" type="checkbox">
+    <div class="logo"><img src="logo.png" style="width: 120px;height: 90px;padding-top: 3px;" alt="logo"></div>
+    <ul class="links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Reservation.html">Reservation</a></li>
+        <li><a href="Contact.html" style="color: black;">Contact</a></li>
+    </ul>
+    <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </label>
+</nav>
+<div class="containerr">
+  <div class="blank"></div>
+  <div class="blank"></div>
+<center><h1>CONTACT US</h1></center>
+  <form>
+    <div class="row">
+      <div class="label_column">
+        <label for="fname">Name :</label>
+      </div>
+      <div class="input_column">
+        <input type="text" id="name" name="Name" placeholder="Your name.." required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="label_column">
+        <label for="mail">Email :</label>
+      </div>
+      <div class="input_column">
+        <input type="email" id="mail" name="mail" placeholder="Exemple@gmail.com" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="label_column">
+        <label for="Subject">Subject :</label>
+      </div>
+      <div class="input_column">
+        <input type="text" id="Subject" name="subject" placeholder="Subject..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="label_column">
+        <label for="country">Country :</label>
+      </div>
+      <div class="input_column">
+        <select id="country" name="country">
+          <option value="Morocco">MOROCCO</option>
+          <option value="canada">CANADA</option>
+          <option value="usa">USA</option>
+          <option value="ITALY">ITALY</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="label_column">
+        <label for="message">Message :</label>
+      </div>
+      <div class="input_column">
+        <textarea id="Message" name="Message" placeholder="Write something.." style="height:200px" required></textarea>
+      </div>
+    </div>
+    <div class="row">
+    <center><input id="myBtn" type="button" value="Envoyer" ></center> 
+    </div>
+  </form>
+</div>
+  <div class="blank"></div>
+
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>bien recu merci a vous</h2>
+      </div>
+      <div class="modal-body">
+        <p id="msg"></p>
+      </div>
+    </div>
+  </div>
+
+<footer>
+   <div class="main-content">
+    <div class="left box">
+      <h2>About us</h2>
+      <div class="content">
+        <p>Réservez la Voiture Parfaite. Comparez et Économisez avec <span style="color: blue;">LocSafi</span> Trouvez les meilleures offres de voitures pas chères en un instant. App mobile intuitive. Meilleurs prix en ligne. Gain de temps et d'argent. Paiement simple et rapide. Promos exceptionnelles.</p>
+
+      </div>
+    </div>
+
+    <div class="center box">
+      <h2>Address</h2>
+      <div class="content">
+        <div >
+          <span class="fas"></span>
+          <span class="text">Avenue med benhima, Safi</span>
+        </div>
+        <div class="phone">
+          <span class="fas"></span>
+          <span class="text">+212-639003782</span>
+        </div>
+        <div>
+          <span class="fas"></span>
+          <span class="text">LocSafi@gmail.com</span>
+        </div>
+      </div>
+    </div>
+    <div class="right box">
+      <h2>Follow Us </h2>
+      <div class="content">
+      <div >
+        
+        <span class="text"> <img class="icon-footer" src="icon/facebook.png" alt="facebook">  Facebook/LocSafi</span>
+      </div>
+      <div class="phone">
+        
+        <span class="text"> <img class="icon-footer" src="icon/instagram.png" alt="instagram"> instagram/LocSafi</span>
+      </div>
+      <div>
+        
+        <span class="text"><img class="icon-footer" src="icon/linkedin.png" alt="linkedin"> linkedin/LocSafi</span>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="bottom">
+    <center>
+      <span>Created By <a href="#">Med Idbihi</a> | </span>
+      <span></span><span> 2021 All rights reserved.</span>
+    </center>
+  </div>
+</footer>
+
+<script>
+
+
+
+
+  var modal = document.getElementById("myModal");
+  
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks the button, open the modal 
+  btn.onclick = function() {
+  var nom = document.getElementById("name").value;
+  var mail = document.getElementById("mail").value;
+  var subject = document.getElementById("Subject").value;
+  var country = document.getElementById("country").value;
+  var Message = document.getElementById("Message").value;
+  document.getElementById("msg").innerHTML="Bonjour "+nom+" nous avons recuperer votre message about :<br>"+subject+" qui contient "+Message+"avec email "+mail+" from "+country;
+    modal.style.display = "block";
+
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+</body>
+</html>

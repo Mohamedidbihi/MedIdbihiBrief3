@@ -1,0 +1,489 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+nav {
+	position:fixed;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	font-family: '', sans-serif;
+	padding: 0 5%;
+	height: 100px;
+	background-color: rgba(134, 168, 222, 0.8);
+}
+
+nav .logo {
+	float: left;
+  width: 120px;
+  height: 90px;
+	display: flex;
+	align-items: center;
+	font-size: 30px;
+	color:rgb(24, 24, 53)
+}
+nav .links {
+	float: right;
+	padding: 0;
+	margin: 0;
+	width: 60%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+nav .links li {
+	list-style: none;
+}
+nav .links a {
+	display: block;
+	padding: 1em;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+#nav-toggle {
+	position: absolute;
+	top: -100px;
+}
+nav .icon-burger {
+	display: none;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+nav .icon-burger .line {
+	width: 30px;
+	height: 5px;
+	background-color: #fff;
+	margin: 5px;
+	border-radius: 3px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  color: black;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.content1{
+  position: relative;
+  margin: 130px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+.content1 .text{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #202020;
+}
+.content1 .p{
+  font-size: 2.1875rem;
+  font-weight: 600;
+  color: #202020;
+}
+footer{
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background: rgba(134, 168, 222, 0.8);
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+/* Souligner les titres  */
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: white;
+}
+
+/* -------------*/
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.center .content .fas:hover{
+  background: darkblue;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: black;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: white;
+  padding-left: 10px;
+  border: 1px solid rgba(134, 168, 222, 0.8);
+}
+.right form input:focus,
+.right form textarea:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: rgba(0, 93, 243, 0.8);
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: rgba(0, 0, 0, 0.8)
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: rgba(134, 168, 222, 0.8);
+}
+.bottom center span{
+  color: #656565;
+}
+.bottom center a{
+  color: rgba(0, 93, 243, 0.8);
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
+h2
+{
+	color: white;
+}
+p{
+	color:black;
+}
+.text
+{
+	color: black;
+}
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(101, 101, 173);
+  border-radius: 4px;
+  resize: vertical;
+  color: #000;
+}  
+input[type=text], select, textarea,input[type=number] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(101, 101, 173);
+  border-radius: 4px;
+  resize: vertical;
+  color: #000;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color: rgb(101, 101, 173);
+}
+
+input[type=button] {
+  background-color: rgb(101, 101, 173);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=button]:hover {
+  background-color: rgb(93, 0, 255);
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.label_column {
+  float: left;
+  width: 15%;
+  margin-top: 6px;
+  padding-left: 10px;
+}
+
+.input_column{
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .label_column, .input_column, input[type=button] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+H1
+{
+  color: white;
+  background-image: linear-gradient(to right, #7f53ac 0, #657ced 100%);
+}
+.blank
+{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.lign
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+.ligne img {
+  width: 33%;
+}
+
+@media screen and (max-width: 850px) {
+  .ligne img {
+    width: 100%;
+  }
+  .del{
+    display: none;
+  }
+}
+.columnn {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.cardd {
+  box-shadow: 0 4px 8px 0 rgb(101, 101, 173);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: rgb(101, 101, 173);
+  color: white;
+}
+
+.containerr {
+  padding: 0 16px;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+.containerr::after, .roww::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color:  rgb(101, 101, 173);
+}
+
+.buttonn {
+  border: none;
+  display: inline-block;
+  padding: 12px;
+  color: white;
+  background-color: rgb(101, 101, 173);
+  text-align: center;
+  cursor: pointer;
+  width: 35%;
+}
+
+.buttonn:hover {
+  background-color: rgb(93, 0, 255);
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: rgb(101, 101, 173);
+  color: white;
+}
+form {
+  padding-left: 120px;
+  padding-top: 80px;
+}
+.modal-body {padding: 2px 16px;}
+
+@media screen and (max-width: 650px) {
+  .columnn {
+    width: 100%;
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+	nav .logo {
+		float: none;
+		width: auto;
+		justify-content: center;
+	}
+  .containerr
+  {
+    padding-left: 10px;
+    padding-right:10px;
+  }
+
+  form
+  {
+    padding-left: 0px;
+    padding-top:  30px;
+  }
+	nav .links {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: rgba(134, 168, 222, 0.8);
+		overflow: hidden;
+		box-sizing: border-box;
+	}
+	nav .links a {
+		font-size: 20px;
+	}
+	nav :checked ~ .links {
+		bottom: 0;
+	}
+	nav .icon-burger {
+		display: block;
+	}
+}
+.icon-footer{
+  width: 18px;
+  margin-bottom: 3px;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Description" content="LocSafi est spécialiste de location de voiture au Maroc">
+    <link rel="stylesheet" href="Style.css">
+    <script src="res.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+</head>
+<body>
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        <div class="logo"><img src="logo.png" style="width: 120px;height: 90px;padding-top: 3px; alt: logo;"></div>
+        <ul class="links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Reservation.html"style="color: black;">Reservation</a></li>
+            <li><a href="Contact.html" >Contact</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+    <div class="containerr">
+        <div class="blank"></div>
+         <div class="blank"></div>
+       <center><h1>Réservez en Toute Sécurité</h1></center>
+       <div class="ligne" > 
+         <div class="resdel">
+           <span class="del">
+         <img src="lc.jpeg" alt="promo">
+         <img src="lc.jpeg" alt="promo">
+          </span>
+         <img src="lc.jpeg" alt="promo">
+       </div>
+       </div>
+       <center><p><strong> Pour la location de voiture au Maroc au meilleur prix et avec les meilleures assurances avec LocSafi.<br> Aucun frais caché. Comparez et économisez !</strong></p></center>
+         <form>
+          <div class="row">
+             <div class="label_column">
+               <label for="fname">type du véhicule :</label>
+             </div>
+             <div class="input_column">
+               <select name="type_du_véhicule" id="tv">
+                 <option value="" selected="selected">Selectionner le type du vehicule </option>
+               </select>
+             </div>
+           </div>
+           <div class="row">
+             <div class="label_column">
+               <label for="carburant">carburant  :</label>
+             </div>
+             <div class="input_column">
+               <select name="Carburant" id="Carburant">
+                 <option value="" selected="selected">Selectionner le type du Carburant </option>
+               </select>
+             </div>
+           </div>
+           <div class="row">
+             <div class="label_column">
+               <label for="carburant">Boite a vitesse  :</label>
+             </div>
+             <div class="input_column">
+               <select name="bv" id="bv">
+                 <option value="" selected="selected">Selectionner le type du Boite a vitesse </option>
+               </select>
+             </div>
+           </div>
+           <div class="row">
+             <div class="label_column">
+               <label for="nbrjour">Nombre de jours :</label>
+             </div>
+             <div class="input_column">
+               <input type="number" name="nbrjour" id="nbrjours" min="1" value="1">
+             </div>
+           </div>
+           <div class="blank"></div>
+           <div class="row">
+           <center><input type="button" value="Reserver" id="myBtn" onclick="Calcule()" ></center> 
+           </div>
+         </form>
+         <p id="Erreur" style="color:rgb(255, 0, 0)"></p>
+         <p id="res" style="color:rgb(39, 230, 188)"></p>
+         <div class="blank"></div>
+         <div class="ligne" > 
+         <img src="lc.jpeg" alt="promo" >
+         <span class="del">
+         <img src="lc.jpeg" alt="promo">
+         <img src="lc.jpeg" alt="promo">
+         </div>
+       </div>
+    <footer>
+        <div class="main-content">
+          <div class="left box">
+            <h2>About us</h2>
+            <div class="content">
+              <p>Réservez la Voiture Parfaite. Comparez et Économisez avec <span style="color: blue;">LocSafi</span> Trouvez les meilleures offres de voitures pas chères en un instant. App mobile intuitive. Meilleurs prix en ligne. Gain de temps et d'argent. Paiement simple et rapide. Promos exceptionnelles.</p>
+              
+            </div>
+          </div>
+      
+          <div class="center box">
+            <h2>Address</h2>
+            <div class="content">
+              <div >
+                <span class="fas"></span>
+                <span class="text">Avenue med benhima, Safi</span>
+              </div>
+              <div class="phone">
+                <span class="fas"></span>
+                <span class="text">+212-639003782</span>
+              </div>
+              <div>
+                <span class="fas"></span>
+                <span class="text">LocSafi@gmail.com</span>
+              </div>
+            </div>
+          </div>
+          <div class="right box">
+            <h2>Follow Us </h2>
+            <div class="content">
+            <div >
+              
+              <span class="text"> <img class="icon-footer" src="icon/facebook.png" alt="facebook">  Facebook/LocSafi</span>
+            </div>
+            <div class="phone">
+              
+              <span class="text"> <img class="icon-footer" src="icon/instagram.png" alt="instagram"> instagram/LocSafi</span>
+            </div>
+            <div>
+              
+              <span class="text"><img class="icon-footer" src="icon/linkedin.png" alt="linkedin"> linkedin/LocSafi</span>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="bottom">
+          <center>
+            <span>Created By <a href="#">Med Idbihi</a> | </span>
+            <span></span><span> 2021 All rights reserved.</span>
+          </center>
+        </div>
+      </footer>
+</html>
